@@ -12,7 +12,47 @@ class homeHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: <Widget>[
+    return Stack(children: <Widget>[
+      Padding(
+        padding: EdgeInsets.only(top: size.height.ceilToDouble() / 5),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+                child: teacherCellHeader(
+                  image: 'assets/images/userProfile.jpg',
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+                child: teacherCellHeader(
+                  image: 'assets/images/userProfile.jpg',
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+                child: teacherCellHeader(
+                  image: 'assets/images/userProfile.jpg',
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+                child: teacherCellHeader(
+                  image: 'assets/images/userProfile.jpg',
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
+                child: teacherCellHeader(
+                  image: 'assets/images/userProfile.jpg',
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
       Container(
           height: size.height / 5,
           width: double.infinity,
@@ -59,31 +99,6 @@ class homeHeader extends StatelessWidget {
                   fill: Colors.white)
             ],
           )),
-      SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
-              child: teacherCellHeader(
-                image: 'assets/images/userProfile.jpg',
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
-              child: teacherCellHeader(
-                image: 'assets/images/userProfile.jpg',
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
-              child: teacherCellHeader(
-                image: 'assets/images/userProfile.jpg',
-              ),
-            ),
-          ],
-        ),
-      )
     ]);
   }
 }
